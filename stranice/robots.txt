@@ -1,0 +1,6 @@
+# Dozvoljava svim pretraživačima da indeksiraju ceo sajt
+User-agent: *
+Disallow:
+
+# Sitemap (ako budeš imao sitemap.xml)
+Sitemap: https://web-designn.onrender.com/sitemap.xml
