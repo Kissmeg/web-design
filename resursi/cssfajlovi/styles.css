@@ -11,11 +11,25 @@
 * { box-sizing: border-box; }
 
 html, body { margin: 0; padding: 0; }
-.sekundarni-font {
-  font-family: "Alfa Slab One", serif;
+
+/* Alfa Slab One */
+@font-face {
+  font-family: "Alfa Slab One";
+  src: url("../fontovi/Alfa_Slab_One/AlfaSlabOne-Regular.ttf") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
+.sekundarni-font {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+}
+
+.sekundarni-font-500 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+
 html { font-size: 16px; }
 body.povecaj-slova { font-size: 18px; }
 body.smanji-slova { font-size: 14px; }
@@ -46,15 +60,6 @@ body.smanji-slova { font-size: 14px; }
 .dugme-slova:hover {
   background: var(--boja-primarna);
 }
-
-
-.sekundarni-font-500 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--boja-tekst);

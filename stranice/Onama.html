@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRUŽIVO – O nama</title>
-    <link rel="icon" href="/resursi/slike/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/resursi/cssfajlovi/onama.css">
+    <link rel="icon" href="../resursi/slike/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../resursi/cssfajlovi/onama.css">
+    <link rel="stylesheet" href="../src/output.css">
     <meta name="keywords" content="reciklaža, održivi proizvodi, ekologija, zeleni život, reciklirani proizvodi, održivo poslovanje, ekološka inicijativa" />
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[var(--boja-pozadina)] text-[var(--boja-tekst)] transition-colors duration-500">
 
@@ -16,31 +16,31 @@
         <div class="sticky top-0 bg-[#222222] backdrop-blur-md border-b border-[var(--boja-border-heder)] z-50">
             <div class="hidden max-w-[1200px] lg:flex mx-auto items-center justify-between p-4 gap-4">
                 <div class="logo">
-                    <a href="/stranice/Pocetna.html">
-                        <img src="/resursi/slike/logo.svg" alt="logo" class="hover:scale-110 transition-transform duration-300">
+                    <a href="../stranice/Pocetna.html">
+                        <img src="../resursi/slike/logo.svg" alt="logo" class="hover:scale-110 transition-transform duration-300">
                     </a>
                 </div>
                 <nav class="flex items-center gap-4 text-white">
-                    <a href="/stranice/Pocetna.html" class="font-semibold">Početna</a>
+                    <a href="../stranice/Pocetna.html" class="font-semibold">Početna</a>
                     <div class="relative group">
-                        <a href="/stranice/Pocetna.html#usluge" class="font-semibold">Proizvodi</a>
+                        <a href="../stranice/Pocetna.html#usluge" class="font-semibold">Proizvodi</a>
                         <div class="absolute top-full left-0 min-w-[300px] text-[var(--tekst-padajuceg-menija)] bg-[var(--boja-pozadina)] shadow-lg rounded-lg overflow-hidden flex-col hidden group-hover:flex z-50">
-                            <a href="/stranice/Papir.html" class="flex items-center p-3 hover:bg-[var(--boja-sekundarna)] hover:text-white transition-colors">
-                                <img class="w-8 h-8 mr-3" src="/resursi/slike/papir.png" alt="Proizvodi od recikliranog papira">
+                            <a href="../stranice/Papir.html" class="flex items-center p-3 hover:bg-[var(--boja-sekundarna)] hover:text-white transition-colors">
+                                <img class="w-8 h-8 mr-3" src="../resursi/slike/papir.png" alt="Proizvodi od recikliranog papira">
                                 <span>Proizvodi od recikliranog papira</span>
                             </a>
-                            <a href="/stranice/Staklo.html" class="flex items-center p-3 hover:bg-[var(--boja-sekundarna)] hover:text-white transition-colors">
-                                <img class="w-8 h-8 mr-3" src="/resursi/slike/boca.png" alt="Proizvodi od recikliranog stakla">
+                            <a href="../stranice/Staklo.html" class="flex items-center p-3 hover:bg-[var(--boja-sekundarna)] hover:text-white transition-colors">
+                                <img class="w-8 h-8 mr-3" src="../resursi/slike/boca.png" alt="Proizvodi od recikliranog stakla">
                                 <span>Proizvodi od recikliranog stakla</span>
                             </a>
-                            <a href="/stranice/Plastika.html" class="flex items-center p-3 hover:bg-[var(--boja-sekundarna)] hover:text-white transition-colors">
-                                <img class="w-8 h-8 mr-3" src="/resursi/slike/plastika.png" alt="Proizvodi od reciklirane plastike">
+                            <a href="../stranice/Plastika.html" class="flex items-center p-3 hover:bg-[var(--boja-sekundarna)] hover:text-white transition-colors">
+                                <img class="w-8 h-8 mr-3" src="../resursi/slike/plastika.png" alt="Proizvodi od reciklirane plastike">
                                 <span>Proizvodi od reciklirane plastike</span>
                             </a>
                         </div>
                     </div>
-                    <a href="/stranice/Onama.html" class="font-semibold">O nama</a>
-                    <a href="/stranice/Kontakt.html" class="font-semibold">Kontakt</a>
+                    <a href="../stranice/Onama.html" class="font-semibold">O nama</a>
+                    <a href="../stranice/Kontakt.html" class="font-semibold">Kontakt</a>
                     <button id="upali-rezim" class="bg-[var(--boja-primarna)] text-white rounded-md px-3 py-1 text-lg cursor-pointer">🌓</button>
                     <button id="dugme-manje-slova" class="bg-[var(--boja-primarna)] text-white rounded-md px-2 py-1 font-bold cursor-pointer">A-</button>
                     <button id="dugme-vece-slova" class="bg-[var(--boja-primarna)] text-white rounded-md px-2 py-1 font-bold cursor-pointer">A+</button>
@@ -51,9 +51,9 @@
         <div class="lg:hidden block">
             <div class="fixed top-0 p-4 bg-[#222222] w-full">
                 <div class="flex justify-between items-center">
-                    <a href="/stranice/Pocetna.html"><img src="/resursi/slike/logo.svg" alt="logo">
+                    <a href="../stranice/Pocetna.html"><img src="../resursi/slike/logo.svg" alt="logo">
                     </a>
-                    <img class="size-8" id="burger-dugme" src="/resursi/slike/burgermeni.svg" alt="Burger meni">
+                    <img class="size-8" id="burger-dugme" src="../resursi/slike/burgermeni.svg" alt="Burger meni">
                 </div>
             </div>
         </div>
@@ -61,30 +61,30 @@
             <div class="flex justify-between p-4 mt-4">
                 <div class="flex-col">
                     <div>
-                        <a class="text-white" href="/stranice/Pocetna.html">Početna</a>
+                        <a class="text-white" href="../stranice/Pocetna.html">Početna</a>
                     </div>
                     <div>
-                        <a class="text-white" href="/stranice/Pocetna.html#usluge">Proizvodi</a>
+                        <a class="text-white" href="../stranice/Pocetna.html#usluge">Proizvodi</a>
                         <div class="flex-col ml-4 text-[var(--tekst)]">
                             <div class="flex items-center">
-                                <img class="size-8 m-2" src="/resursi/slike/papir.png" alt="Proizvodi od recikliranog papira">
-                                <a class="text-white" href="/stranice/Papir.html">Proizvodi od recikliranog papira</a>
+                                <img class="size-8 m-2" src="../resursi/slike/papir.png" alt="Proizvodi od recikliranog papira">
+                                <a class="text-white" href="../stranice/Papir.html">Proizvodi od recikliranog papira</a>
                             </div>
                             <div class="flex items-center">
-                                <img class="size-8 m-2" src="/resursi/slike/boca.png" alt="Proizvodi od recikliranog stakla">
-                                <a class="text-white" href="/stranice/Staklo.html">Proizvodi od recikliranog stakla</a>
+                                <img class="size-8 m-2" src="../resursi/slike/boca.png" alt="Proizvodi od recikliranog stakla">
+                                <a class="text-white" href="../stranice/Staklo.html">Proizvodi od recikliranog stakla</a>
                             </div>
                             <div class="flex items-center">
-                                <img class="size-8 m-2" src="/resursi/slike/plastika.png" alt="Proizvodi od reciklirane plastike">
-                                <a class="text-white" href="/stranice/Plastika.html">Proizvodi od reciklirane plastike</a>
+                                <img class="size-8 m-2" src="../resursi/slike/plastika.png" alt="Proizvodi od reciklirane plastike">
+                                <a class="text-white" href="../stranice/Plastika.html">Proizvodi od reciklirane plastike</a>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <a class="text-white" href="/stranice/Onama.html">O nama</a>
+                        <a class="text-white" href="../stranice/Onama.html">O nama</a>
                     </div>
                     <div>
-                        <a class="text-white" href="/stranice/Kontakt.html">Kontakt</a>
+                        <a class="text-white" href="../stranice/Kontakt.html">Kontakt</a>
                     </div>
                     <div class="flex-col flex">
                         <button id="upali-rezim-mobilni"        class="bg-[var(--boja-primarna)] text-white rounded-md px-3 m-4 py-1 text-lg cursor-pointer">🌓</button>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="items-center">
-                    <img class="size-8" id="zatvori-dugme" src="/resursi/slike/zatvori.svg" alt="Zatvori">
+                    <img class="size-8" id="zatvori-dugme" src="../resursi/slike/zatvori.svg" alt="Zatvori">
                 </div>
             </div>
         </div>
@@ -139,21 +139,21 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-[var(--boja-pozadina)] border-[var(--var-boja-sekcija)] shadow-[var(--senka)] rounded-xl p-6 flex flex-col items-center">
                     <div class="size-[128px]">
-                        <img class="rounded-full object-cover size-[128px]" src="/resursi/slike/osoba1.webp" alt="Osoba 1">
+                        <img class="rounded-full object-cover size-[128px]" src="../resursi/slike/osoba1.webp" alt="Osoba 1">
                     </div>
                     <h3 class="font-bold text-xl mb-1">Marko Marković</h3>
                     <p class="text-center ">Osnivač i direktor</p>
                 </div>
                 <div class="bg-[var(--boja-pozadina)] border-[var(--var-boja-sekcija)] shadow-[var(--senka)] rounded-xl p-6 flex flex-col items-center">
                     <div class="size-[128px]">
-                        <img class="rounded-full object-cover size-[128px]" src="/resursi/slike/osoba2.webp" alt="Osoba 2">
+                        <img class="rounded-full object-cover size-[128px]" src="../resursi/slike/osoba2.webp" alt="Osoba 2">
                     </div>
                     <h3 class="font-bold text-xl mb-1">Anita Olujić</h3>
                     <p class="text-center ">Marketing i prodaja</p>
                 </div>
                 <div class="bg-[var(--boja-pozadina)] border-[var(--var-boja-sekcija)] shadow-[var(--senka)] rounded-xl p-6 flex flex-col items-center">
                     <div class="size-[128px]">
-                        <img class="rounded-full object-cover size-[128px]" src="/resursi/slike/osoba3.webp" alt="Osoba 3">
+                        <img class="rounded-full object-cover size-[128px]" src="../resursi/slike/osoba3.webp" alt="Osoba 3">
                     </div>
                     <h3 class="font-bold text-xl mb-1">Kristijan Preljić</h3>
                     <p class="text-center ">Operacije i logistika</p>
@@ -173,23 +173,23 @@
             <div class="flex-1 min-w-[250px]">
                 <h3 class="text-xl font-semibold mb-2 text-center lg:text-left">Navigacija</h3>
                 <ul class="space-y-2 text-center lg:text-left">
-                    <li><a href="/stranice/Pocetna.html" class="hover:text-[var(--boja-sekundarna)]">Početna</a></li>
-                    <li><a href="/stranice/Pocetna.html#usluge" class="hover:text-[var(--boja-sekundarna)]">Proizvodi</a></li>
-                    <li><a href="/stranice/Onama.html" class="hover:text-[var(--boja-sekundarna)]">O nama</a></li>
-                    <li><a href="/stranice/Kontakt.html" class="hover:text-[var(--boja-sekundarna)]">Kontakt</a></li>
+                    <li><a href="../stranice/Pocetna.html" class="hover:text-[var(--boja-sekundarna)]">Početna</a></li>
+                    <li><a href="../stranice/Pocetna.html#usluge" class="hover:text-[var(--boja-sekundarna)]">Proizvodi</a></li>
+                    <li><a href="../stranice/Onama.html" class="hover:text-[var(--boja-sekundarna)]">O nama</a></li>
+                    <li><a href="../stranice/Kontakt.html" class="hover:text-[var(--boja-sekundarna)]">Kontakt</a></li>
                 </ul>
             </div>
             <div class="flex-1 min-w-[250px]">
                 <h3 class="text-xl font-semibold mb-2 text-center lg:text-left">Pratite nas</h3>
                 <div class="flex gap-4 justify-center lg:justify-start">
-                    <a href="#"><img src="/resursi/slike/facebook.svg" alt="Facebook" class="w-6 h-6"></a>
-                    <a href="#"><img src="/resursi/slike/instagram.svg" alt="Instagram" class="w-6 h-6"></a>
-                    <a href="#"><img src="/resursi/slike/linkedin.svg" alt="LinkedIn" class="w-6 h-6"></a>
+                    <a href="#"><img src="../resursi/slike/facebook.svg" alt="Facebook" class="w-6 h-6"></a>
+                    <a href="#"><img src="../resursi/slike/instagram.svg" alt="Instagram" class="w-6 h-6"></a>
+                    <a href="#"><img src="../resursi/slike/linkedin.svg" alt="LinkedIn" class="w-6 h-6"></a>
                 </div>
             </div>
         </div>
         <div class="text-center mt-8 text-sm opacity-80">&copy; 2025 KRUŽIVO. Sva prava zadržana.</div>
     </footer>
-    <script src="/resursi/skripte/kontrola.js"></script>
+    <script src="../resursi/skripte/kontrola.js"></script>
 </body>
 </html>

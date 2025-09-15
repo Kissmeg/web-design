@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   prikaziSlajd(trenutni);
   pokreniAutoPlay();
 });
+
 // Selektuj sve dugmadi za tamni režim
 const dugmeTamni = document.querySelectorAll(".upali-rezim");
 
@@ -76,6 +77,49 @@ dugmeTamni.forEach(btn => {
     }
   });
 });
+  const dugmeVece = document.getElementById('dugme-vece-slova');
+  const dugmeManje = document.getElementById('dugme-manje-slova');
+  const dugmeVeceMobilni = document.getElementById('dugme-vece-slova-mobilni');
+  const dugmeManjeMobilni = document.getElementById('dugme-manje-slova-mobilni');
+  let savedFont = localStorage.getItem('fontSize');
+
+  const body = document.body;
+    if(savedFont){
+        body.style.fontSize = savedFont + "px";
+    }
+
+    dugmeVece.addEventListener('click', () => {
+        const style = window.getComputedStyle(body).fontSize;
+        let size = parseFloat(style);
+        size += 2;
+        body.style.fontSize = size + 'px';
+        localStorage.setItem('fontSize', size);
+    });
+
+    dugmeManje.addEventListener('click', () => {
+        const style = window.getComputedStyle(body).fontSize;
+        let size = parseFloat(style);
+        size -= 2;
+        body.style.fontSize = size + 'px';
+        localStorage.setItem('fontSize', size);
+    });
+    dugmeVeceMobilni.addEventListener('click', () => {
+        const style = window.getComputedStyle(body).fontSize;
+        let size = parseFloat(style);
+        size += 2;
+        body.style.fontSize = size + 'px';
+        localStorage.setItem('fontSize', size);
+    });
+
+    dugmeManjeMobilni.addEventListener('click', () => {
+        const style = window.getComputedStyle(body).fontSize;
+        let size = parseFloat(style);
+        size -= 2;
+        body.style.fontSize = size + 'px';
+        localStorage.setItem('fontSize', size);
+    });
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const forma = document.querySelector(".kontakt-forma");
   const modal = document.getElementById("modal-poruka");
@@ -147,49 +191,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-  const dugmeVece = document.getElementById('dugme-vece-slova');
-  const dugmeManje = document.getElementById('dugme-manje-slova');
-  const dugmeVeceMobilni = document.getElementById('dugme-vece-slova-mobilni');
-  const dugmeManjeMobilni = document.getElementById('dugme-manje-slova-mobilni');
-  let savedFont = localStorage.getItem('fontSize');
-  const body = document.body;
-    if(savedFont){
-        body.style.fontSize = savedFont + "px";
-    }
-
-    dugmeVece.addEventListener('click', () => {
-        const style = window.getComputedStyle(body).fontSize;
-        let size = parseFloat(style);
-        size += 2;
-        body.style.fontSize = size + 'px';
-        localStorage.setItem('fontSize', size);
-    });
-
-    dugmeManje.addEventListener('click', () => {
-        const style = window.getComputedStyle(body).fontSize;
-        let size = parseFloat(style);
-        size -= 2;
-        body.style.fontSize = size + 'px';
-        localStorage.setItem('fontSize', size);
-    });
-    dugmeVeceMobilni.addEventListener('click', () => {
-        const style = window.getComputedStyle(body).fontSize;
-        let size = parseFloat(style);
-        size += 2;
-        body.style.fontSize = size + 'px';
-        localStorage.setItem('fontSize', size);
-    });
-
-    dugmeManjeMobilni.addEventListener('click', () => {
-        const style = window.getComputedStyle(body).fontSize;
-        let size = parseFloat(style);
-        size -= 2;
-        body.style.fontSize = size + 'px';
-        localStorage.setItem('fontSize', size);
-    });
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.pathname.split("/").pop();
