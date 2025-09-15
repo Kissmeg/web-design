@@ -125,16 +125,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("modal-poruka");
   const zatvoriBtn = document.getElementById("zatvori-modal");
 
-  // Polja forme (redosledom)
-  const ime = forma.querySelector("input[type='text']");
-  const email = forma.querySelector("input[type='email']");
-  const poruka = forma.querySelector("textarea");
+  // Polja forme
+  const ime = forma.querySelector("input[name='ime']");
+  const email = forma.querySelector("input[name='email']");
+  const poruka = forma.querySelector("textarea[name='poruka']");
 
   function validacija() {
     let validno = true;
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Obriši stare greške
+    // obriši stare greške
     forma.querySelectorAll(".greska").forEach((el) => el.remove());
 
     // Ime
@@ -170,21 +170,20 @@ document.addEventListener("DOMContentLoaded", () => {
     input.insertAdjacentElement("afterend", span);
   }
 
-  forma.addEventListener("submit", (e) => {
-    e.preventDefault(); // ne šalje formu na server
-
+  // Funkcija koja se poziva klikom na dugme
+  window.posaljiFormu = function () {
     if (validacija()) {
-      modal.style.display = "flex"; // prikazujemo modal
-      forma.reset(); // resetujemo formu
+      modal.style.display = "flex";
+      forma.reset();
     }
-  });
+  };
 
   // Zatvori modal kada se klikne na dugme
   zatvoriBtn.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
-  // Zatvori modal ako se klikne van box-a
+  // Zatvori modal klikom van sadržaja
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+        <title>KRUŽIVO – Sve se vraća, ništa se ne baca</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>KRUŽIVO – Sve se vraća, ništa se ne baca</title>
+        <meta name="keywords" content="reciklaža, održivi proizvodi, ekologija, zeleni život, reciklirani proizvodi, održivo poslovanje, ekološka inicijativa" />
         <meta name="description" content="KRUŽIVO: priča o reciklaži, proizvodi i rešenja za održiv život i poslovanje." />
         <link rel="stylesheet" href="../resursi/cssfajlovi/styles.css">
-        <meta name="keywords" content="reciklaža, održivi proizvodi, ekologija, zeleni život, reciklirani proizvodi, održivo poslovanje, ekološka inicijativa" />
         <link rel="icon" href="../resursi/slike/logo.ico" type="image/x-icon">
     </head>
     <header class="heder">
@@ -97,26 +97,27 @@
                     javićemo ti se što pre.
                 </p>
                 </div>
-
-                <form class="kontakt-forma" novalidate>
+                <form class="kontakt-forma">
                     <input 
                         type="text" 
                         placeholder="Ime i prezime" 
                         name="ime"
+                        required
                     >
                     <input 
                         type="email" 
                         placeholder="Email" 
                         name="email"
+                        required
                     >
                     <textarea 
                         placeholder="Poruka" 
                         rows="5" 
                         name="poruka"
+                        required
                     ></textarea>
-                    <button type="submit" class="primarno-dugme">Pošalji</button>
+                    <button type="button" class="primarno-dugme" onclick="posaljiFormu()" >Pošalji</button>
                 </form>
-
             </div>
         </div>
 
