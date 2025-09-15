@@ -98,36 +98,30 @@
                 </p>
                 </div>
 
-                <form class="kontakt-forma">
+                <form class="kontakt-forma" novalidate>
                     <input 
                         type="text" 
                         placeholder="Ime i prezime" 
-                        name="ime" 
-                        required 
-                        minlength="3" 
-                        maxlength="50"
+                        name="ime"
                     >
                     <input 
                         type="email" 
                         placeholder="Email" 
-                        name="email" 
-                        required
+                        name="email"
                     >
                     <textarea 
                         placeholder="Poruka" 
                         rows="5" 
-                        name="poruka" 
-                        required 
-                        minlength="10" 
-                        maxlength="500"
+                        name="poruka"
                     ></textarea>
-                <button type="submit" class="primarno-dugme">Pošalji</button>
+                    <button type="submit" class="primarno-dugme">Pošalji</button>
                 </form>
+
             </div>
-            </div>
+        </div>
 
             <!-- Modal poruka -->
-            <div id="modal-poruka" class="modal-poruka">
+        <div id="modal-poruka" class="modal-poruka">
             <div class="modal-sadrzaj">
                 <p>Poruka je uspešno poslata! Hvala što ste nas kontaktirali.</p>
                 <button id="zatvori-modal" class="primarno-dugme">Zatvori</button>
